@@ -25,8 +25,8 @@ const handleChangeBackground = (e) => {
 
 $(document).on("click", function (event) {
     if ($(event.target).closest(".modal-images").length <= 0 && $(event.target).closest(".show-modal").length <= 0 ) {
-        buttonShowModal.classList.toggle("active");
-        modalImages.classList.toggle("active");
+        buttonShowModal.classList.remove("active");
+        modalImages.classList.remove("active");
     }
 });
 
