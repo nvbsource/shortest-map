@@ -157,7 +157,7 @@ body{
 .modal-images{
 	position: fixed;
 	top: 0;
-	right: -100%;
+	right: -400px;
 	width: 400px;
 	height: 100vh;
 	background-color: white;
