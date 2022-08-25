@@ -22,5 +22,13 @@ const handleChangeBackground = (e) => {
     element.classList.add("active");
     document.body.style = "background-image: url(" + src + ")";
 }
+
+$(document).on("click", function (event) {
+    if ($(event.target).closest(".modal-images").length <= 0 && $(event.target).closest(".show-modal").length <= 0 ) {
+        buttonShowModal.classList.toggle("active");
+        modalImages.classList.toggle("active");
+    }
+});
+
 images.forEach(item => item.addEventListener("click", handleChangeBackground));
 buttonShowModal.addEventListener("click", handleShowModal);
